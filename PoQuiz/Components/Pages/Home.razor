@@ -1,0 +1,42 @@
+﻿@page "/"
+@using PoQuiz.Service
+@inject QuestionService QuestionService
+@inject GameService GameService
+
+
+<h3>Question @GameService.QuestionNumber/@TotalQuestions</h3>
+
+
+@if (!GameService.GameOver)
+{
+    <p>@GameService.CurrentQuestion.Text</p>
+    <button @onclick="() => Answer(true)">True</button>
+    <button @onclick="() => Answer(false)">False</button>
+}
+else
+{
+    <h3>Game Over! Your score: @GameService.Score</h3>
+    <!-- Potentially show a form to enter the user's name for the high score table -->
+}
+
+@code {
+    private const int TotalQuestions = 20;
+
+    protected override void OnInitialized()
+    {
+        GameService.StartGame();
+        GameService.OnQuestionUpdated += StateHasChanged;
+        GameService.OnGameOver += StateHasChanged;
+    }
+
+    private void Answer(bool answer)
+    {
+        GameService.AnswerQuestion(answer);
+    }
+
+    public void Dispose()
+    {
+        GameService.OnQuestionUpdated -= StateHasChanged;
+        GameService.OnGameOver -= StateHasChanged;
+    }
+}

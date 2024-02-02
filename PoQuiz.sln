@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoQuiz", "PoQuiz\PoQuiz.csproj", "{37E36C2D-2841-469E-B720-180992096CC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seeder", "Seeder\Seeder.csproj", "{D62B6643-5AA5-4DC1-8789-8AEC80373FDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37E36C2D-2841-469E-B720-180992096CC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37E36C2D-2841-469E-B720-180992096CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37E36C2D-2841-469E-B720-180992096CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37E36C2D-2841-469E-B720-180992096CC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62B6643-5AA5-4DC1-8789-8AEC80373FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62B6643-5AA5-4DC1-8789-8AEC80373FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62B6643-5AA5-4DC1-8789-8AEC80373FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62B6643-5AA5-4DC1-8789-8AEC80373FDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC41DD86-FA93-420A-A29A-F9A40E797E75}
+	EndGlobalSection
+EndGlobal
