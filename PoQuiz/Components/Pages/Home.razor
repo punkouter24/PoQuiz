@@ -16,6 +16,7 @@
 else
 {
     <h3>Game Over! Your score: @GameService.Score</h3>
+    <button @onclick="RestartGame">RESTART</button>
     <!-- Potentially show a form to enter the user's name for the high score table -->
 }
 
@@ -32,6 +33,11 @@ else
     private void Answer(bool answer)
     {
         GameService.AnswerQuestion(answer);
+    }
+
+    private void RestartGame()
+    {
+        GameService.StartGame();
     }
 
     public void Dispose()
